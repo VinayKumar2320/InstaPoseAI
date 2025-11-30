@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InstaPose AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
       body {
@@ -12,7 +13,6 @@
         background-color: #0f172a;
         color: #ffffff;
       }
-      /* Custom scrollbar for webkit */
       ::-webkit-scrollbar {
         width: 6px;
       }
@@ -24,19 +24,12 @@
         border-radius: 3px;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "@heroicons/react/": "https://aistudiocdn.com/@heroicons/react@^2.2.0/"
-  }
-}
-</script>
-</head>
+  </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- This MUST be here for Vite -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
